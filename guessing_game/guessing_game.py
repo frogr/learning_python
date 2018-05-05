@@ -13,8 +13,8 @@ def main(tries, correct_guess):
 def game_won(tries):
     print()
     print('==%==%==%==%==%==%==%==%==')
-    print(' YOU WIN!!! ')
-    print(' IT TOOK YOU', tries, "TRIES")
+    print('        YOU WIN!!! ')
+    print('   IT TOOK YOU', tries, "TRIES")
     print('==%==%==%==%==%==%==%==%==')
     print()
     exit(0)
