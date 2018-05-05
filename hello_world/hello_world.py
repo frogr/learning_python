@@ -11,11 +11,15 @@ def hello_world():
 
 def greet():
     user_input = input('whats ya name? ')
-    if user_input == 'exit':
-        print('goodbye!')
-        exit(0)
+    check_input(user_input)
     print('hello', user_input)
     hello_world()
+
+
+def check_input(u_input):
+    if u_input == 'exit':
+        print('goodbye!')
+        exit(0)
 
 
 hello_world()
