@@ -10,16 +10,6 @@ def main(tries, correct_guess):
     check_input(user_input, correct_guess, tries)
 
 
-def game_won(tries):
-    print()
-    print('==%==%==%==%==%==%==%==%==')
-    print('        YOU WIN!!! ')
-    print('   IT TOOK YOU', tries, "TRIES")
-    print('==%==%==%==%==%==%==%==%==')
-    print()
-    exit(0)
-
-
 def check_input(user_input, correct_guess, tries):
     if int(user_input) > correct_guess:
         print('sorry, you guessed too high!')
@@ -32,5 +22,14 @@ def check_input(user_input, correct_guess, tries):
     else:
         game_won(tries)
 
+
+def game_won(tries):
+    print()
+    print('==%==%==%==%==%==%==%==%==')
+    print('        YOU WIN!!! ')
+    print('   IT TOOK YOU %s TRIES' % tries)
+    print('==%==%==%==%==%==%==%==%==')
+    print()
+    exit(0)
 
 main(tries, correct_guess)
